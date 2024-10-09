@@ -1,31 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="app.js"></script>
   </head>
   <body class="text-white font-roboto">
     <div class="min-h-screen flex flex-col">
-      <header
-        class="bg-white text-black flex justify-between items-center h-20 mx-auto w-10/12"
-      >
+      <header class="bg-white text-black flex justify-between items-center h-20 mx-auto w-10/12">
         <a href="index.html">
           <div class="flex items-center">
-            <img
-              alt="Orange Cat Logo"
-              class="mr-3"
-              height="40"
-              src="assets/logo.svg"
-            />
-            <span class="text-xl font-bold"> Orange Cat </span>
+            <img alt="Orange Cat Logo" class="mr-3" height="40" src="assets/logo.svg" />
+            <span class="text-xl font-bold">Orange Cat</span>
           </div>
         </a>
         <nav class="space-x-4 md:flex hidden">
@@ -54,8 +43,8 @@
         </nav>
       </header>
 
-      <main class="flex gap-8 items-start justify-between bg-white text-black md:pt-16 md:py-0 py-12">
-        <div class="md:w-1/2 md:pl-32 mx-auto w-10/12 md:w-full text-center md:text-left">
+      <main class="flex-grow flex flex-col md:flex-row gap-8 md:items-center items-end justify-between bg-white text-black md:pt-16 md:py-8 py-12 overflow-hidden">
+        <div class="md:w-1/2 md:pl-32 mx-auto w-10/12 md:w-full text-center md:text-left mb-auto max-w-3xl md:mt-10">
           <h1 class="md:text-8xl text-5xl font-bold mb-6">About Us</h1>
           <p class="text-2xl tracking-wider mt-12">
             At Humain, we're driven to help people &amp; their organisations
@@ -66,16 +55,14 @@
         <img
           alt="Illustration of an orange cat"
           src="assets/aboutuscat.svg"
-          class="md:flex hidden"
+          class="ml-auto md:pl-0 pl-8"
         />
       </main>
 
       <footer class="text-gray-300 py-16 flex flex-col gap-16 bg-[#151515]">
         <div class="w-10/12 h-px bg-white mx-auto"></div>
         <div class="w-10/12 mx-auto px-4">
-          <div
-            class="flex flex-col md:flex-row justify-between items-start md:items-center"
-          >
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div class="mb-6 md:mb-0">
               <div class="flex items-center mb-2">
                 <img src="assets/logo.svg" alt="" />
