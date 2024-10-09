@@ -1,23 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orange Cat Team</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      select option {
+        background-color: #151515;
+      }
+    </style>
+    <script src="app.js"></script>
   </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-    body {
-      font-family: "Montserrat", sans-serif;
-    }
-    select option {
-      background-color: #151515;
-    }
-  </style>
-  <script src="app.js"></script>
-  <body class="bg-black text-white">
+  <body class="bg-black text-white flex flex-col min-h-screen">
     <header class="flex justify-between items-center h-20 w-10/12 mx-auto">
       <a href="index.html">
         <div class="flex items-center">
@@ -27,7 +30,7 @@
             height="40"
             src="assets/logo.svg"
           />
-          <span class="text-xl font-bold"> Orange Cat </span>
+          <span class="text-xl font-bold">Orange Cat</span>
         </div>
       </a>
       <nav class="space-x-6 hidden md:flex">
@@ -65,8 +68,10 @@
       </nav>
     </header>
 
-    <main class="mx-auto w-10/12 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8">
+    <main class="flex-grow mx-auto w-10/12 py-16">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8"
+      >
         <div class="bg-white rounded-[1rem] overflow-hidden h-full w-full">
           <div class="h-80 w-full">
             <img
@@ -171,7 +176,7 @@
       </div>
     </main>
 
-    <footer class="text-gray-300 py-16 flex flex-col gap-16">
+    <footer class="text-gray-300 py-16 flex flex-col gap-16 mt-auto">
       <div class="w-10/12 h-px bg-white mx-auto"></div>
       <div class="w-10/12 mx-auto px-4">
         <div
@@ -179,7 +184,7 @@
         >
           <div class="mb-6 md:mb-0">
             <div class="flex items-center mb-2">
-              <img src="assets/logo.svg" alt="" />
+              <img src="assets/logo.svg" alt="Orange Cat Logo" />
               <span class="text-xl font-semibold ml-2">Orange Cat</span>
             </div>
             <p class="text-sm mb-4 max-w-md font-normal">
