@@ -1,101 +1,112 @@
 <html>
- <head>
-  <title>
-   About
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body class="bg-gray-900 text-white font-roboto">
-  <div class="min-h-screen flex flex-col">
-   <header class="bg-white text-black flex justify-between items-center p-6">
-    <div class="flex items-center"><a href="index.html">
-     <img alt="Orange Cat logo" class="mr-2" height="40" src="assets/logo.svg" width="40"/></a>
-     <span class="font-bold">
-      Orange Cat
-     </span>
+  <head>
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js"></script>
+  </head>
+  <body class="text-white font-roboto">
+    <div class="min-h-screen flex flex-col">
+      <header
+        class="bg-white text-black flex justify-between items-center h-20 mx-auto w-10/12"
+      >
+        <a href="index.html">
+          <div class="flex items-center">
+            <img
+              alt="Orange Cat Logo"
+              class="mr-3"
+              height="40"
+              src="assets/logo.svg"
+            />
+            <span class="text-xl font-bold"> Orange Cat </span>
+          </div>
+        </a>
+        <nav class="space-x-4 md:flex hidden">
+          <button class="bg-black text-white py-2 px-4 rounded-full">
+            <a href="team.html">Team</a>
+          </button>
+          <button class="bg-black text-white py-2 px-4 rounded-full">
+            <a href="aboutus.html">Company</a>
+          </button>
+          <button class="bg-black text-white py-2 px-4 rounded-full">
+            <a href="portfolio.html">Portfolio</a>
+          </button>
+        </nav>
+
+        <nav class="md:hidden">
+          <select
+            id="mobileMenu"
+            class="w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            onchange="navigateTo(this.value)"
+          >
+            <option value="">Menu</option>
+            <option value="team.html">The Team</option>
+            <option value="aboutus.html">Company</option>
+            <option value="portfolio.html">Portfolio</option>
+          </select>
+        </nav>
+      </header>
+
+      <main class="flex gap-8 items-start justify-between bg-white text-black md:pt-16 md:py-0 py-12">
+        <div class="md:w-1/2 md:pl-32 mx-auto w-10/12 md:w-full text-center md:text-left">
+          <h1 class="md:text-8xl text-5xl font-bold mb-6">About Us</h1>
+          <p class="text-2xl tracking-wider mt-12">
+            At Humain, we're driven to help people &amp; their organisations
+            achieve more of what matters. We help you to digitally evolve with
+            innovations such as AI, data &amp; hyper-automation.
+          </p>
+        </div>
+        <img
+          alt="Illustration of an orange cat"
+          src="assets/aboutuscat.svg"
+          class="md:flex hidden"
+        />
+      </main>
+
+      <footer class="text-gray-300 py-16 flex flex-col gap-16 bg-[#151515]">
+        <div class="w-10/12 h-px bg-white mx-auto"></div>
+        <div class="w-10/12 mx-auto px-4">
+          <div
+            class="flex flex-col md:flex-row justify-between items-start md:items-center"
+          >
+            <div class="mb-6 md:mb-0">
+              <div class="flex items-center mb-2">
+                <img src="assets/logo.svg" alt="" />
+                <span class="text-xl font-semibold ml-2">Orange Cat</span>
+              </div>
+              <p class="text-sm mb-4 max-w-md font-normal">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet.
+              </p>
+              <p class="text-xs font-normal">&copy; 2024 Orange cat Pvt Ltd</p>
+            </div>
+            <div class="flex flex-row justify-between md:w-fit w-full gap-12">
+              <div>
+                <h3 class="text-lg font-light mb-2">Follow us</h3>
+                <ul class="space-y-2 font-normal text-white">
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-light mb-2">Contact</h3>
+                <ul class="space-y-2 font-normal text-white">
+                  <li><a href="mailto:info@orangecat.com">Email</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <nav class="space-x-4">
-     <button class="bg-black text-white py-2 px-4 rounded-full">
-      <a href="team.html"> Team</a>
-     </button>
-     <button class="bg-black text-white py-2 px-4 rounded-full">
-        <a href="team.html">Company</a>
-     </button>
-     <button class="bg-black text-white py-2 px-4 rounded-full">
-        <a href="team.html">Portfolio</a>
-     </button>
-    </nav>
-   </header>
-   <main class="flex-grow flex flex-col items-center justify-center bg-white text-black p-10">
-    <h1 class="text-5xl font-bold mb-6">
-     About Us
-    </h1>
-    <p class="text-lg text-center max-w-2xl mb-10">
-     At Humain, we're driven to help people &amp; their organisations achieve more of what matters. We help you to digitally evolve with innovations such as AI, data &amp; hyper-automation.
-    </p>
-    <img alt="Illustration of an orange cat" class="w-1/2" height="300" src="assets/aboutuscat.svg" width="300"/>
-   </main>
-   <footer class="p-12 bg-black text-white">
-    <div class="border-t border-gray-700 pt-6">
-     <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="flex items-center mb-6 md:mb-0">
-       <img alt="Orange Cat Logo" class="mr-3" height="40" src="assets/logo.svg" width="40"/>
-       <div>
-        <span class="text-xl font-bold">
-         Orange Cat
-        </span>
-        <p class="text-sm">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-       </div>
-      </div>
-      <div class="flex space-x-6">
-       <div>
-        <h3 class="font-bold mb-2">
-         Follow us
-        </h3>
-        <ul>
-         <li>
-          <a class="text-white" href="https://www.linkedin.com/company/orangecat-technologies-pvt-ltd">
-           LinkedIn
-          </a>
-         </li>
-         <li>
-          <a class="text-white" href="#">
-           Facebook
-          </a>
-         </li>
-         <li>
-          <a class="text-white" href="#">
-           GitHub
-          </a>
-         </li>
-        </ul>
-       </div>
-       <div>
-        <h3 class="font-bold mb-2">
-         Contact
-        </h3>
-        <ul>
-         <li>
-          <a class="text-white" href="mailto:vidhan@orangcat.ai">
-           Email
-          </a>
-         </li>
-        </ul>
-       </div>
-      </div>
-     </div>
-     <div class="mt-6 text-center">
-      <p class="text-sm">
-       © 2024 Orange Cat Pvt Ltd
-      </p>
-     </div>
-    </div>
-   </footer>
-  </div>
- </body>
+  </body>
 </html>

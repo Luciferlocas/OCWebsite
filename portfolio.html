@@ -1,119 +1,136 @@
 <html>
- <head>
-  <title>
-   Orange Cat
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body class="bg-black text-white font-roboto">
-    <header class="flex justify-between items-center p-6 bg-black">
-        <div class="flex items-center"><a href="index.html">
-         <img alt="Orange Cat Logo" class="mr-3" height="40" src="assets/logo.svg" width="40"/></a>
-         <span class="text-xl font-bold">
-          Orange Cat
-         </span>
+  <head>
+    <title>Orange Cat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js"></script>
+  </head>
+  <body class="bg-[#151515] text-white">
+    <!-- Header -->
+    <header class="flex justify-between items-center h-20 w-10/12 mx-auto">
+      <a href="index.html">
+        <div class="flex items-center">
+          <img
+            alt="Orange Cat Logo"
+            class="mr-3"
+            height="40"
+            src="assets/logo.svg"
+          />
+          <span class="text-xl font-bold"> Orange Cat </span>
         </div>
-        <nav class="space-x-6">
-         <a class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full" href="team.html">
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="team.html"
+        >
           The Team
-         </a>
-         <a class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full" href="aboutus.html">
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="aboutus.html"
+        >
           Company
-         </a>
-         <a class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full" href="portfolio.html">
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="portfolio.html"
+        >
           Portfolio
-         </a>
-        </nav>
-       </header>
-  <main class="flex justify-center items-center flex-wrap gap-8 p-6">
-   <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
-    <img alt="Laptop with Xperience Chatbot" class="rounded-t-lg mb-4" height="180" src="assets/xperience.svg" width="320"/>
-    <h2 class="text-xl font-bold">
-     XPERIENCE CHATBOT
-    </h2>
-    <p>
-     Lorem ipsum dolor sitamet,cons etur adipiscing elit.
-    </p>
-   </div>
-   <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
-    <img alt="Room Design Selection" class="rounded-t-lg mb-4" height="180" src="assets/nirwana.svg" width="320"/>
-    <h2 class="text-xl font-bold">
-     NIRVANA .AI
-    </h2>
-    <p>
-     Lorem ipsum dolor sitamet,cons etur adipiscing elit.
-    </p>
-   </div>
-   <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
-    <img alt="Laptop with Auto Resizer" class="rounded-t-lg mb-4" height="180" src="assets/autoresizer.svg" width="320"/>
-    <h2 class="text-xl font-bold">
-     AUTO RESIZER
-    </h2>
-    <p>
-     Lorem ipsum dolor sitamet,cons etur adipiscing elit.
-    </p>
-   </div>
-  </main>
-  <footer class="p-12 bg-black text-white">
-    <div class="border-t border-gray-700 pt-6">
-     <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="flex items-center mb-6 md:mb-0">
-       <img alt="Orange Cat Logo" class="mr-3" height="40" src="assets/logo.svg" width="40"/>
-       <div>
-        <span class="text-xl font-bold">
-         Orange Cat
-        </span>
-        <p class="text-sm">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-       </div>
+        </a>
+      </nav>
+
+      <nav class="md:hidden">
+        <select
+          id="mobileMenu"
+          class="w-full py-2 px-3 border border-gray-300 bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          onchange="navigateTo(this.value)"
+        >
+          <option value="">Menu</option>
+          <option value="team.html">The Team</option>
+          <option value="aboutus.html">Company</option>
+          <option value="portfolio.html">Portfolio</option>
+        </select>
+      </nav>
+    </header>
+    <main class="flex justify-center items-center flex-wrap gap-8 p-6">
+      <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
+        <img
+          alt="Laptop with Xperience Chatbot"
+          class="rounded-t-lg mb-4"
+          height="180"
+          src="assets/xperience.svg"
+          width="320"
+        />
+        <h2 class="text-xl font-bold">XPERIENCE CHATBOT</h2>
+        <p>Lorem ipsum dolor sitamet,cons etur adipiscing elit.</p>
       </div>
-      <div class="flex space-x-6">
-       <div>
-        <h3 class="font-bold mb-2">
-         Follow us
-        </h3>
-        <ul>
-         <li>
-          <a class="text-white" href="https://www.linkedin.com/company/orangecat-technologies-pvt-ltd">
-           LinkedIn
-          </a>
-         </li>
-         <li>
-          <a class="text-white" href="#">
-           Facebook
-          </a>
-         </li>
-         <li>
-          <a class="text-white" href="#">
-           GitHub
-          </a>
-         </li>
-        </ul>
-       </div>
-       <div>
-        <h3 class="font-bold mb-2">
-         Contact
-        </h3>
-        <ul>
-         <li>
-          <a class="text-white" href="mailto:vidhan@orangcat.ai">
-           Email
-          </a>
-         </li>
-        </ul>
-       </div>
+      <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
+        <img
+          alt="Room Design Selection"
+          class="rounded-t-lg mb-4"
+          height="180"
+          src="assets/nirwana.svg"
+          width="320"
+        />
+        <h2 class="text-xl font-bold">NIRVANA .AI</h2>
+        <p>Lorem ipsum dolor sitamet,cons etur adipiscing elit.</p>
       </div>
-     </div>
-     <div class="mt-6 text-center">
-      <p class="text-sm">
-       © 2024 Orange Cat Pvt Ltd
-      </p>
-     </div>
-    </div>
-   </footer>
- </body>
+      <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
+        <img
+          alt="Laptop with Auto Resizer"
+          class="rounded-t-lg mb-4"
+          height="180"
+          src="assets/autoresizer.svg"
+          width="320"
+        />
+        <h2 class="text-xl font-bold">AUTO RESIZER</h2>
+        <p>Lorem ipsum dolor sitamet,cons etur adipiscing elit.</p>
+      </div>
+    </main>
+    <footer class="text-gray-300 py-16 flex flex-col gap-16">
+      <div class="w-10/12 h-px bg-white mx-auto"></div>
+      <div class="w-10/12 mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center"
+        >
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center mb-2">
+              <img src="assets/logo.svg" alt="" />
+              <span class="text-xl font-semibold ml-2">Orange Cat</span>
+            </div>
+            <p class="text-sm mb-4 max-w-md font-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+            <p class="text-xs font-normal">&copy; 2024 Orange cat Pvt Ltd</p>
+          </div>
+          <div class="flex flex-row justify-between md:w-fit w-full gap-12">
+            <div>
+              <h3 class="text-lg font-light mb-2">Follow us</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-light mb-2">Contact</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="mailto:info@orangecat.com">Email</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
